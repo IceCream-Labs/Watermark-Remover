@@ -1,0 +1,3 @@
+import os
+
+os.system("/bin/bash /path/to/INFERENCE.sh False"/

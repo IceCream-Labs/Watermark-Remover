@@ -1,0 +1,58 @@
+
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Watermark-Python-Flask-REST-API"
+  },
+    "tags": [
+      {
+        "name": "Watermark and Background Removal",
+        "description": "API for removing watermark and background"
+      }
+    ],
+    "paths": {
+      "/water": {
+        "post": {
+          "tags": [
+            "Watermark and Background Removal"
+          ],
+        "summary": "Returns welcome",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/water"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "water": {
+          "type": "object",
+          "properties": {
+            "files[]": {
+              "type": "array",
+              "items":{
+                    "type": "file",
+                    "format": "binary"
+                    }
+            },"ONLY_BG_REMOVAL": {
+              "type": "string"
+            }
+        }
+      }
+    }   
+  }
+}
