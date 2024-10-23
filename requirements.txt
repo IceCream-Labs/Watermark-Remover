@@ -1,11 +1,11 @@
 matplotlib==2.2.2
 albumentations==0.4.5
-scipy==1.4.1
+scipy==1.10.0rc1
 scikit_image==0.17.2
 torch==1.6.0
 tqdm==4.46.1
 progress==1.5
-numpy==1.18.1
+numpy==1.22.2
 torchvision==0.6.0
 opencv_python_headless==4.2.0.34
 Pillow==8.3.2
@@ -22,3 +22,4 @@ yapf
 pyiqa
 glob
 easyocr
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
