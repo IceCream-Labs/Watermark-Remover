@@ -8,8 +8,9 @@ requests
 scikit-image
 scipy
 tb-nightly
-torch>=1.7
+torch>=2.2.0
 torchvision
 tqdm
 yapf
 pyiqa
+filelock>=3.20.1 # not directly required, pinned by Snyk to avoid a vulnerability
