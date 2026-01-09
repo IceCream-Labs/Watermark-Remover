@@ -2,7 +2,7 @@ matplotlib==2.2.2
 albumentations==0.4.5
 scipy==1.4.1
 scikit_image==0.17.2
-torch==1.6.0
+torch==2.9.0
 tqdm==4.46.1
 progress==1.5
 numpy==1.18.1
@@ -22,3 +22,5 @@ yapf
 pyiqa
 glob
 easyocr
+aiohttp>=3.13.3 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
