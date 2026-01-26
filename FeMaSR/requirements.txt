@@ -8,8 +8,10 @@ requests
 scikit-image
 scipy
 tb-nightly
-torch>=1.7
+torch>=2.10.0
 torchvision
 tqdm
 yapf
 pyiqa
+sentencepiece>=0.2.1 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.46.2 # not directly required, pinned by Snyk to avoid a vulnerability
